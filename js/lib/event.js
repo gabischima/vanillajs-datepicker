@@ -1,3 +1,5 @@
+import EventTarget from '@ungap/event-target'
+
 const listenerRegistry = new WeakMap();
 const {addEventListener, removeEventListener} = EventTarget.prototype;
 
