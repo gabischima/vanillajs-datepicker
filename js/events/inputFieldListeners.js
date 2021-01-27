@@ -153,7 +153,7 @@ export function onKeydown(datepicker, ev) {
         datepicker.enterEditMode();
         return;
       default:
-        if (ev.key.length === 1 && !ev.ctrlKey && !ev.metaKey) {
+        if ((ev.key && ev.key.length === 1)&& !ev.ctrlKey && !ev.metaKey) {
           datepicker.enterEditMode();
         }
         return;
